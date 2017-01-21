@@ -1,0 +1,10 @@
+
+<br/>
+<div *ngIf="order">
+  <div>editOrder:</div>
+  <label>OrderNo:</label><input [(ngModel)]="order.orderno" placeholder="Order No" />
+  <br/>
+  <label>Value:</label><input [(ngModel)]="order.value" placeholder="0.00" />
+</div>
+
+<button (click)="goBack()">Back</button>

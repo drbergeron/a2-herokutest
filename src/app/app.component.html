@@ -1,0 +1,39 @@
+<div class="slds-context-bar">
+  <div class="slds-context-bar__primary slds-context-bar__item--divider-right">
+    <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--click slds-no-hover">
+      <div class="slds-context-bar__icon-action">
+        <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Description of the icon when needed">
+          <div class="slds-icon-waffle">
+            <div class="slds-r1"></div>
+            <div class="slds-r2"></div>
+            <div class="slds-r3"></div>
+            <div class="slds-r4"></div>
+            <div class="slds-r5"></div>
+            <div class="slds-r6"></div>
+            <div class="slds-r7"></div>
+            <div class="slds-r8"></div>
+            <div class="slds-r9"></div>
+          </div>
+          <span class="slds-assistive-text">HELLO!</span>
+        </button>
+      </div>
+      <span class="slds-context-bar__label-action slds-context-bar__app-name">
+        <span class="slds-truncate" title="App Name">{{title}}</span>
+      </span>
+    </div>
+  </div>
+<nav class="slds-context-bar__secondary" role="navigation">
+    <ul class="slds-grid">
+       <li class="slds-context-bar__item">
+         <a routerLink="/dashboard" class="slds-context-bar__label-action"  title="Dashboard" > <span class="slds-truncate">Dashboard</span></a>
+      </li>
+      <li class="slds-context-bar__item">
+         <a routerLink="/orders" class="slds-context-bar__label-action"  title="Orders" > <span class="slds-truncate">Orders</span></a>
+      </li>
+     
+    </ul>
+</nav>
+</div>
+<div class="slds-m-left--x-small">
+  <router-outlet></router-outlet>
+</div>

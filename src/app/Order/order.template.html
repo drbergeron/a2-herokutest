@@ -1,0 +1,20 @@
+<br/>
+<div class="slds-text-heading--small">Orders List</div>
+
+<ul class='slds-has-dividers--top'>
+  <li *ngFor="let order of orders" 
+      class="slds-item"
+      [class.selected]="order === selectedOrder"
+      (click)="onselect(order)">
+      <ul class="slds-list--horizontal slds-has-dividers--left">
+        <li class="slds-item">id: {{order.id}} </li>
+        <li class="slds-item">orderno: {{order.orderno}} </li>
+        <li class="slds-item">value: {{order.value}} </li>
+        <li class="slds-item"><a [routerLink]="['/orders',order.id]" class="col-1-4" >Edit </a> </li>
+      </ul>
+  </li>
+</ul>
+
+<order-detail [order]="selectedOrder"> </order-detail>
+
+

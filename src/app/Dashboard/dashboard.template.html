@@ -1,0 +1,24 @@
+<div class="slds-text-heading--medium slds-m-top--medium slds-m-bottom--medium">Order Summary</div>
+
+<table class="slds-table slds-table--bordered slds-table--cell-buffer">
+  <thead>
+    <tr class="slds-text-title--caps">
+      <th scope="col">
+        <div class="slds-truncate" title="Opportunity Name">Order Type</div>
+      </th>
+      <th scope="col">
+        <div class="slds-truncate" title="Account Name">Order Count</div>
+      </th>
+      </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let count of counts" >
+      <td data-label="Type Name">
+        <div class="slds-truncate" title="Type">{{count.type}} - {{count.name}}</div>
+      </td>
+      <td data-label="Value">
+        <div class="slds-truncate" title="4/14/2015">{{count.value}}</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
